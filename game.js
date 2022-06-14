@@ -26,8 +26,10 @@ function game() {
         let round = playRound(playerSelection, computerSelection);
         if (round === -1) {
             console.log(`Invalid Selection`);
+            i--;
         } else if (round === 0) {
             console.log(`You Tied!`);
+            i--;
         } else if (round === 1) {
             console.log(`You Win! ${playerSelection.toUpperCase()} beats ${computerSelection.toUpperCase()}`);
             playerWins++;
