@@ -23,7 +23,7 @@ function game() {
     for (let i = 0; i < 5; i++) {
         let playerSelection = prompt('Please enter your choice', 'ROCK, PAPER, SCISSORS');
         let computerSelection = computerPlay();
-        let round = playRound(playerSelection, computerPlay());
+        let round = playRound(playerSelection, computerSelection);
         if (round === -1) {
             console.log(`Invalid Selection`);
         } else if (round === 0) {
