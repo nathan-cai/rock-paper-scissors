@@ -1,3 +1,60 @@
 body {
     background-color: #fbeb01;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h3 {
+    font-size: 40px;
+    margin: 0px;
+}
+
+#instructions { 
+    font-size: 20px;
+}
+
+#score {
+    margin: 0;
+    font-size:80px
+}
+
+#choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.choice {
+    margin: 0px 40px;
+    transition: transform .2s; /* Animation */
+}
+
+.choice:hover {
+    height: 110%;
+    width: auto;
+    transform: scale(1.2);
+}
+
+#message {
+    font-size: 25px;
+}
+
+#again {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #b49900;
+    background-color: #fffcd2;
+}
+
+#again:hover {
+    height: 110%;
+    width: auto;
+    transform: scale(1.2);
+    background-color: #ffffff;
 }
