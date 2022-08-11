@@ -50,6 +50,7 @@ h3 {
     border-radius: 10px;
     border: 2px solid #b49900;
     background-color: #fffcd2;
+    transition: transform .2s;
 }
 
 #again:hover {
