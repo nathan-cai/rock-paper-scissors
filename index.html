@@ -5,40 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="game.js" defer></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Rock Paper Scissors Battle</h1>
-    <p id="instructions">Choose your move by clicking below!!</p>
-    <div id="choices">
-      <input
-        type="image"
-        class="choice"
-        id="rock"
-        src="img/rock.png"
-        alt=""
-        onclick="game('rock', score)"
-      />
-      <input
-        type="image"
-        class="choice"
-        id="paper"
-        src="img/paper.png"
-        alt=""
-        onclick="game('paper', score)"
-      />
-      <input
-        type="image"
-        class="choice"
-        id="scissor"
-        src="img/scissors.png"
-        alt=""
-        onclick="game('scissor', score)"
-      />
+    <div class="column" id="left">
+      <h3 class="choiceHeader">Your Choice</h3>
+      <div id="choices">
+        <input
+          type="image"
+          class="choice"
+          id="rock"
+          src="img/rock.png"
+          alt=""
+          onclick="game('Rock', score)"
+        />
+        <input
+          type="image"
+          class="choice"
+          id="paper"
+          src="img/paper.png"
+          alt=""
+          onclick="game('Paper', score)"
+        />
+        <input
+          type="image"
+          class="choice"
+          id="scissor"
+          src="img/scissors.png"
+          alt=""
+          onclick="game('Scissor', score)"
+        />
+      </div>
     </div>
-    <h3>Score</h3>
-    <p id="score">0-0</p>
-    <p id="message"></p>
+    <div class="column" id="mid">
+      <h1>Rock Paper Scissors Battle</h1>
+      <h3>Score</h3>
+      <p id="score">0-0</p>
+      <p id="message">Start clicking your choice on the left!</p>
+    </div>
+    <div class="column" id="right">
+      <h3 class="choiceHeader">Computer's Choice</h3>
+      <img class="compChoice" id="cRock" src="img/rock.png" alt="" />
+      <img class="compChoice" id="cPaper" src="img/paper.png" alt="" />
+      <img class="compChoice" id="cScissor" src="img/scissors.png" alt="" />
+    </div>
+    <script src="game.js"></script>
   </body>
 </html>
