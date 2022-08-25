@@ -1,37 +1,44 @@
+@font-face {
+    font-family: revamped;
+    src: url(font/Revamped.otf);
+}
+
 body {
     background-color: #fbeb01;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:revamped;
+    display: flex;
+    justify-content: center;
+}
+
+.column {
     text-align: center;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 65px;
+    margin: 20px 0;
 }
 
 h3 {
-    font-size: 40px;
-    margin: 0px;
-}
-
-#instructions { 
-    font-size: 20px;
+    font-size: 45px;
+    margin: 80px 0 0 0;
 }
 
 #score {
     margin: 0;
-    font-size:80px
+    font-size:200px
 }
 
 #choices {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
 }
 
 .choice {
-    margin: 0px 40px;
     transition: transform .2s; /* Animation */
+    z-index: 2;
 }
 
 .choice:hover {
@@ -45,17 +52,54 @@ h3 {
 }
 
 #again {
-    font-size: 16px;
+    font-family: revamped;
+    font-size: 18px;
     padding: 10px 20px;
     border-radius: 10px;
-    border: 2px solid #b49900;
-    background-color: #fffcd2;
+    border: 2px solid #000000;
+    background-color: #fbeb01;
     transition: transform .2s;
 }
 
 #again:hover {
+    transform: scale(1.2);
+    background-color: #ffffff;
+}
+
+#left{
+    flex: 31%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 100px;
+}
+
+#right {
+    flex: 31%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 100px;
+}
+
+#mid {
+    flex: 38%;
+    text-align: center;
+}
+
+.choiceHeader {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px 0 13px 0;
+    z-index: 3;
+}
+
+.compChoice {
+    z-index: 2;
+    transition: transform .2s; /* Animation */
+}
+
+.chosen {
     height: 110%;
     width: auto;
     transform: scale(1.2);
-    background-color: #ffffff;
 }
