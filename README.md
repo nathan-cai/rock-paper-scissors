@@ -1,5 +1,4 @@
 # Rock Paper Scissor Game
-
 A Browser Rock Paper Scissor Game
 
 Try out your luck against the computer at the github site below. Good Luck!
